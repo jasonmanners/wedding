@@ -2,10 +2,129 @@
 <html>
   <head>
     <title>Jamanda</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /*
+      COLORS
+
+      blue   = rgb(86,165,229);
+      yellow = rgb(250,237,7);
+
+      */
+      * {
+        font-family: 'Open Sans', sans-serif;
+      }
+      body {
+        background: #000;
+      }
+
+      .navbar-wedding {
+         background: rgba(86,165,229,.8);
+      }
+
+      .navbar-wedding a{
+        text-transform: uppercase;
+        color: #FEFEFE;
+      }
+
+      .navbar-wedding .navbar-nav li:hover {
+        /*background-color: rgb(250,237,7);*/
+      }
+
+      .navbar-wedding li:hover a {
+        color: #222222;
+      }
+
+      header nav ul {
+        list-style: none;
+      }
+
+      header nav ul li {
+        float: left;
+        margin-left: 25px;
+      }
+
+      .section {
+        width: 100%;
+        height: 800px;
+        background: white;
+      }
+
+      .section h1, .section h2 {
+        text-align: center;
+      }
+      #home {
+        margin-top:45px;
+        /*background: rgb(86,165,229);*/
+        color: #FEFEFE;
+        background:  url('/img/barn-us.jpg') no-repeat center bottom fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      #home .title {
+        padding-top: 300px;
+      }
+
+      #home .title h1 {
+        text-transform: uppercase;
+        font-size: 65px;
+      }
+
+      #home .title h2 {
+        text-transform: uppercase;
+        font-size: 65px;
+        color: #FEFEFE;
+        margin: 10px auto;
+        font-weight: 600;
+      }
+    </style>
   </head>
   <body>
-    <div style='width:100%; margin: 150px atuo; text-align: center'>
-      <h1 style=''>Jason and Amanda are getting married!</h1>
+    <div class='navbar navbar-wedding navbar-fixed-top'>
+      <div class='container'>
+        <div class='collapse navbar-collapse'>
+          <ul class='nav nav-justified'>
+            <li><a href="#about">A + J</a></li>
+            <li><a href="#wedding">Wedding</a></li>
+            <li><a href="#wedding-party">Wedding Party</a></li>
+            <li><a href="#guest-info">Guest Info</a></li>
+            <li><a href="#gifts">Gifts</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <div id='home' class='section'>
+      <div class='title'>
+        <h1>Amanda + Jason</h1>
+        <h2>05 . 16 . 2015</h2>
+      </div>
+    </div>
+
+    <div id='about' class='section'>
+      <h1>A + J</h1>
+      <div id='photos'>
+      </div>	
+    </div>
+
+    <div id='wedding' class='section'>
+      <h1>The Wedding</h1>
+    </div>
+
+    <div id='wedding-party' class='section'>.
+      <h1>The Wedding Party</h1>
+    </div>
+
+    <div id='guest-info' class='section'>
+      <h1>Guest Info</h1>
+    </div>
+
+    <div id='gifts' class='section'>
+      <h1>Registry</h1>
+    </div>
+
   </body>
 </html>
