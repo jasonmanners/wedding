@@ -16,11 +16,17 @@
         font-family: 'Open Sans', sans-serif;
       }
       body {
-        background: #000;
+        background: #f6f6f6;
       }
 
       .navbar-wedding {
-         background: rgba(69,132,183,.8);
+        /*background: rgba(69,132,183,0.8);*/
+        background: #3498db;
+        width: 100%;
+        z-index: 100;
+        border-radius: 0;
+        min-height:25px;
+        margin-bottom:0;
       }
 
       .navbar-wedding a{
@@ -28,12 +34,15 @@
         color: #FEFEFE;
       }
 
-      .navbar-wedding .navbar-nav li:hover {
-        /*background-color: rgb(250,237,7);*/
+      .navbar-wedding li:hover {
+        /*background-color: rgba(69,132,183,0.8);*/
       }
 
       .navbar-wedding li:hover a {
-        color: #222222;
+        /*color: #222222;*/
+        /*background-color: rgba(69,132,183,0.8); */
+        background-color: #2980b9; 
+        transition: background 0.25s, color 0.25s;
       }
 
       header nav ul {
@@ -47,18 +56,21 @@
 
       .section {
         width: 100%;
-        height: 800px;
-        background: white;
+        /*height: 800px;*/
+        background: #f6f6f6;
+        padding: 10px 100px 10px 100px;
       }
-
-      .section h1, .section h2 {
+      /*, .section h2 */
+      .section h1{
         text-align: center;
       }
+
       #home {
         /*margin-top:50px;*/
         /*background: rgb(86,165,229);*/
+        height: 500px;
         color: #FEFEFE;
-        background:  url('/img/barn-us.jpg') no-repeat center bottom fixed;
+        background:  url('/img/barn-us.jpg') no-repeat center bottom;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -66,7 +78,8 @@
       }
 
       #home .title {
-        padding-top: 300px;
+        padding-top: 150px;
+        text-shadow: 0 1px 2px rgba(0,0,0,.6);;
       }
 
       #home .title h1 {
@@ -75,60 +88,226 @@
       }
 
       #home .title h2 {
+        text-align:center;
         text-transform: uppercase;
         font-size: 65px;
         color: #FEFEFE;
         margin: 10px auto;
         font-weight: 600;
       }
+      .count {
+        background: #2ecc71;
+        color: #ecf0f1;
+        padding: 12px 0 0 0;
+        /*width: 100%;*/
+        height: 151px;
+        transition: background-color .25s ease-in;
+        text-align: center;
+        font-weight: 400;
+      }
+      .count p {
+        padding-bottom: 10px;
+        border-bottom: 4px solid #fff;
+      }
+      .count h1 {
+        margin-bottom:0;
+      }
     </style>
   </head>
   <body>
-    <div class='navbar navbar-wedding navbar-fixed-top'>
+    
+    <div id='home' class='section'>
+      <div class='title '>
+        <!-- <h1>Jamanda</h1> -->
+        <h2>05 . 16 . 2015</h2>
+      </div>
+    </div>
+    <div class='navbar navbar-wedding' data-0="position: static;" data-top="position: fixed; top: 0;">
+    <!-- navbar-fixed-bottom -->
       <div class='container'>
         <div class='collapse navbar-collapse'>
           <ul class='nav nav-justified'>
-            <li><a href="#about">A + J</a></li>
-            <li><a href="#wedding">Wedding</a></li>
-            <li><a href="#wedding-party">Wedding Party</a></li>
-            <li><a href="#guest-info">Guest Info</a></li>
-            <li><a href="#gifts">Gifts</a></li>
+            <li><a href="#about">The Couple</a></li>
+            <li><a href="#about">Proposal</a></li>
+            <li><a href="#wedding">Wedding Details</a></li>
+            <li><a href="#gifts">Registry</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div id='home' class='section'>
-      <div class='title'>
-        <h1>Amanda + Jason</h1>
-        <h2>05 . 16 . 2015</h2>
+    <div class='section'>
+      <div class='row' style='border-bottom: 1px solid #ddd;padding-bottom: 20px;'>
+        <div class='col-md-6 col-md-offset-1'>
+          <div style='background: #fff; padding: 13px;'>
+            <p style='font-size:19px;'>Welcome! We can't wait to celebrate with all of you! Until then take a look around and enjoy! We will be sending out invitiations in a little bit. Don't forget to RSVP when you get them! - J &amp; A</p>
+          </div>
+        </div>
+        <div class='col-md-3 count'>
+          <p>It all goes down in</p>
+          <script language="JavaScript">
+            TargetDate = "05/16/2015 4:30 PM";
+            BackColor = "#f6f6f6";
+            ForeColor = "#ecf0f1";
+            CountActive = true;
+            CountStepper = -1;
+            LeadingZero = true;
+            DisplayFormat = "<h1>%%D%% Days</h1>";
+            FinishMessage = "";
+          </script>
+          <script language="JavaScript" src="http://scripts.hashemian.com/js/countdown.js"></script>
+        </div>
+      </div>
+    </div>
+    <div id='about' class='section'>
+      <!-- <h1>A + J</h1> -->
+      <div class='row'  style='border-bottom: 1px solid #ddd;padding-bottom: 20px;'>
+        <!-- <div class='col-md-6'>
+          <img class='col-md-12' src='img/about-us.jpg'/>
+        </div> -->
+        <div class='col-md-6'>
+          <img src='img/about-us.jpg' style='width: 100%; height: 300px; border: 4px solid #9b59b6;'/>
+          <h2><small>Her</small></h2>
+          <p>
+            Amanda was born and raised in Merced, a small town in the central valley.  Her parents, Bob and Sandee, taught her what a loving and cooperative relationship looks like.  Her older sister, Sarah, taught her how to stand up for herself and how to fake sleeping when your parents check in on you. In highschool, Amanda loved swimming, waterpolo, and boys.  She went to college at Cal Poly San Luis Obispo, majoring in Architectural Engineering.  Now, Amanda works as a structural drafter by day and a professional cat trainer by night.
+          </p>
+        </div>
+        <div class='col-md-6'>
+          <img src='img/about-us.jpg' style='width: 100%; height: 300px; border: 4px solid #3498db;'/>
+          <h2><small>Him</small></h2>
+          <p>
+            Jason was born and raised in Moorpark, a small town in the suburbs of Los Angeles, closer to Ventura. His parents, Chris and Lisa, taught him how to work hard, be creative, and most importantly how to treat others. He taught his younger brother, Taylor, how to be messy, play video games until the wee hours of the morning, and how to be irresistible to the ladies.  He taught his younger sister, Kaitlyn, how to grow hair; really, she has really long hair. In highschool, Jason loved to drum, experiment with physics, and roam around town with slurpees. He went to college at Cal Poly San Luis Obispo, majoring in Computer Science and meeting the love of his life. Now, Jason works as a entrepenuer by day and cat wrangler by night.
+          </p>
+        </div>
+      </div>
+      
+      <div class='row'>
+        <div class='col-md-12'  style='border-bottom: 1px solid #ddd;padding-bottom: 20px;'>
+          <h1>How they met</h1>
+          <div class='row'>
+            <div class='col-md-6'>
+              <p><em>October 2008 (Amanda):</em></p>
+              <p>
+                At a birthday party for a friend of a friend, I was playing beer pong when Jason arrived.  I spotted him immediately and pulled him out of the crowd for take a shot for me, which he missed.  Later in the party, we met up again while helping clean up.  The conversation never stopped flowing since that night.
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-6'>
+              <p><em>December 2008 (Jason):</em></p>
+              <p>
+                I took a 7 1/2 hour drive up to Sacramento to visit Amanda over Christmas break.  Everyone thought I was crazy for making such a long trip so early in the relationship!
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-6'>
+              <p><em>Summer 2009 (Jason):</em></p>
+              <p>
+                Amanda spent the summer living with her mom in Sacramento while I was with my parents in Moorpark. When we weren't on the phone together, we made the road trip multiple times to be with each other.
+              </p>
+            </div>
+          </div> 
+          <div class='row'>
+            <div class='col-md-6'>
+              <p><em>June 2009 (Amanda):</em></p>
+              <p>
+                Jason graduated from Cal Poly while I still had another quarter to go.  Another agonizing 3 months of long distance made us realize that we never wanted to be apart again.
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-6'>
+              <p><em>January 2010 (Jason):</em></p>
+              <p>
+                After Amanda graduated, I asked her to move in with me into our tiny apartment in Foster City.  It never felt so right.
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-6'>
+              <p><em>March 2010 (Amanda):</em></p>
+              <p>
+                We found Beau (our rescue cat) and made him apart of the family.
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-6'>
+              <p><em>November 2010 (Jason):</em></p>
+              <p>
+                Ninja (our other rescue cat) found us and made us apart of his family.
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-6'>
+              <p><em>April 2012 (Amanda):</em></p>
+              <p>
+                We had the crazy idea to run a half marathon, and we completed it!
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-6'>
+              <p><em>July 2012 (Jason):</em></p>
+              <p>
+                We got picked up and moved to Fremont where we expanded our apartment by an entire room!
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-6'>
+              <p><em>September 2013 (Jason):</em></p>
+              <p>
+                We took a once in a lifetime trip with my family to Ireland, England, and Scotland.  Right after, we jumped on another place for a romantic vacation in Colorado.  Amanda had no idea what I had planned!
+              </p>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-md-6'>
+              <p><em>October 2013 (Amanda):</em></p>
+              <p>
+                He proposed!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='proposal' class='section'>
+      <div class='row'  style='border-bottom: 1px solid #ddd;padding-bottom: 20px;'>
+        <div class='col-md-12'>
+          <h1>The Proposal</h1>
+          <p>
+            It happened on the first night that we were on our Colorado vacation last year...
+            When we got into town, we decided to visit the Denver Botanic Gardens first.  When we got there we found that we had picked the perfect day and it was free!  The day was beautiful, the flowers were lovely, but Jason did not propose there.
+            Later, we checked into our hotel where we had booked a standard Queen.  When we arrived we were informed that our standard was upgraded to a suite with a kitchen and sitting room!  What luck!  Jason planned none of this!
+          </p>
+          <p>
+            After wallowing in our room for a bit, we went out to dinner with Jason's cousin, Schyler, at a diner just down the street.  The food was good, the company was even better, but Jason didn't propose there either.
+            Once we dropped Schyler off, we decided to keep the night going and visit a landmark about 30 minutes outside of Denver called Red Rock Ampitheater.  This is a beautiful venue where many famous bands perform with a backdrop of impressively huge rocks and a stricking view of the city.  There were no bands playing that night, but we had heard that it was awesome for photographs when no one was around.  So we brought Amanda's camera and tripod and Jason brought his backpack that he was weirdly clutching and checking on all day.
+          </p>
+          <p>
+            When we got to the ampitheater an employee politely informed us that it would be closing in just a few minutes!  Jason picked up his pace markedly and dragged Amanda to the first spot that you could see the city.  But Amanda, not knowing that Jason had something very special planned, decided this spot wasn't good enough and made them move on.  On the way to the next and final spot, Jason was so nervous and rushed, that he missed a stair and scraped up his ankle pretty good.  But he played it off gallantly and didn't let on how much it hurt until much later.  When Amanda finally agreed to a spot, they set up her tripod and she spend some time adjusting her camera.  She was trying to focus it and said, "I think you should take a look at this, I can never seem to get it right", to which Jason replied "Just take the picture."  Little did she know, he was already down on one knee behind her!  So Amanda snapped the long exposure and Jason said her name to get her to turn around.  She found him on his knee, and after a few moments of silence asked, "What are you doing?"  That's when Jason popped the question and gave her the ring.  Amanda was so surprised, and promptly said yes!
+          </p>
+        </div>
       </div>
     </div>
 
-    <div id='about' class='section'>
-      <h1>A + J</h1>
       <div id='photos'>
       </div>	
       <div>
-        How we got engaged
-
-        It happened on the first night that we were on our Colorado vacation last year...
-        When we got into town, we decided to visit the Denver Botanic Gardens first.  When we got there we found that we had picked the perfect day and it was free!  The day was beautiful, the flowers were lovely, but Jason did not propose there.
-        Later, we checked into our hotel where we had booked a standard Queen.  When we arrived we were informed that our standard was upgraded to a suite with a kitchen and sitting room!  What luck!  Jason planned none of this!
-        After wallowing in our room for a bit, we went out to dinner with Jason's cousin, Schyler, at a diner just down the street.  The food was good, the company was even better, but Jason didn't propose there either.
-        Once we dropped Schyler off, we decided to keep the night going and visit a landmark about 30 minutes outside of Denver called Red Rock Ampitheater.  This is a beautiful venue where many famous bands perform with a backdrop of impressively huge rocks and a stricking view of the city.  There were no bands playing that night, but we had heard that it was awesome for photographs when no one was around.  So we brought Amanda's camera and tripod and Jason brought his backpack that he was weirdly clutching and checking on all day.
-        When we got to the ampitheater an employee politely informed us that it would be closing in just a few minutes!  Jason picked up his pace markedly and dragged Amanda to the first spot that you could see the city.  But Amanda, not knowing that Jason had something very special planned, decided this spot wasn't good enough and made them move on.  On the way to the next and final spot, Jason was so nervous and rushed, that he missed a stair and scraped up his ankle pretty good.  But he played it off gallantly and didn't let on how much it hurt until much later.  When Amanda finally agreed to a spot, they set up her tripod and she spend some time adjusting her camera.  She was trying to focus it and said, "I think you should take a look at this, I can never seem to get it right", to which Jason replied "Just take the picture."  Little did she know, he was already down on one knee behind her!  So Amanda snapped the long exposure and Jason said her name to get her to turn around.  She found him on his knee, and after a few moments of silence asked, "What are you doing?"  That's when Jason popped the question and gave her the ring.  Amanda was so surprised, and promptly said yes!How we got engaged
-
-        It happened on the first night that we were on our Colorado vacation last year...
-        When we got into town, we decided to visit the Denver Botanic Gardens first.  When we got there we found that we had picked the perfect day and it was free!  The day was beautiful, the flowers were lovely, but Jason did not propose there.
-        Later, we checked into our hotel where we had booked a standard Queen.  When we arrived we were informed that our standard was upgraded to a suite with a kitchen and sitting room!  What luck!  Jason planned none of this!
-        After wallowing in our room for a bit, we went out to dinner with Jason's cousin, Schyler, at a diner just down the street.  The food was good, the company was even better, but Jason didn't propose there either.
-        Once we dropped Schyler off, we decided to keep the night going and visit a landmark about 30 minutes outside of Denver called Red Rock Ampitheater.  This is a beautiful venue where many famous bands perform with a backdrop of impressively huge rocks and a stricking view of the city.  There were no bands playing that night, but we had heard that it was awesome for photographs when no one was around.  So we brought Amanda's camera and tripod and Jason brought his backpack that he was weirdly clutching and checking on all day.
-        When we got to the ampitheater an employee politely informed us that it would be closing in just a few minutes!  Jason picked up his pace markedly and dragged Amanda to the first spot that you could see the city.  But Amanda, not knowing that Jason had something very special planned, decided this spot wasn't good enough and made them move on.  On the way to the next and final spot, Jason was so nervous and rushed, that he missed a stair and scraped up his ankle pretty good.  But he played it off gallantly and didn't let on how much it hurt until much later.  When Amanda finally agreed to a spot, they set up her tripod and she spend some time adjusting her camera.  She was trying to focus it and said, "I think you should take a look at this, I can never seem to get it right", to which Jason replied "Just take the picture."  Little did she know, he was already down on one knee behind her!  So Amanda snapped the long exposure and Jason said her name to get her to turn around.  She found him on his knee, and after a few moments of silence asked, "What are you doing?"  That's when Jason popped the question and gave her the ring.  Amanda was so surprised, and promptly said yes!
+        
       </div>
     </div>
 
     <div id='wedding' class='section'>
       <h1>The Wedding</h1>
+      <h2><small>Ceremony</small></h2>
+      <p>
+        The ceremony will take place on a hill next to the main barn where we will be having the reception.  The ceremony will be all outdoors (weather permitting), so please dress accordingly.  The incline to the ceremony site is moderate, so wear shoes that you can walk uphill in for about 100 feet or so.  There will be a cart to take you up to the site for our guests with disabilities.  The reception space will be 
+        completely sheltered from wind and rain, so no need to wear anything special there.
+      </p>
     </div>
 
     <div id='wedding-party' class='section'>.
@@ -138,42 +317,57 @@
     <div id='guest-info' class='section'>
       <h1>Guest Info</h1>
 
-      <h3>Where</h3>
-      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Spreafico%20Farms%207900%20Orcutt%20Road%20San%20Luis%20Obispo%2C%20CA&key=AIzaSyB83UxCeMa9M0b945EY0wU0sFDP4QZdHXc"></iframe>
-      <h4>Information for our guests</h4>
-      <p>The ceremony will take place on a hill next to the main barn where we will be having the reception.  The ceremony will be all outdoors (weather permitting), so please dress accordingly.  The incline to the ceremony site is moderate, so wear shoes that you can walk uphill in for about 100 feet or so.  There will be a cart to take you up to the site for our guests with disabilities.  The reception space will be completely sheltered from wind and rain, so no need to wear anything special there.</p>
-      <h4>Driving directions</h4>
+      
+      <div style='width: 600px; margin:20px auto;'>
+        <h3 style='text-align: center;'>Where</h3>
+        <iframe width="600" height="450" frameborder="0" style="border:0;"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3260.51973282964!2d-120.56268800000002!3d35.193521000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ec5f87d9a6e1e7%3A0x2f14a2b21a109735!2s7900+Orcutt+Rd%2C+San+Luis+Obispo%2C+CA+93401!5e0!3m2!1sen!2sus!4v1410816446586"></iframe>
+      </div>
+      <div class='row'  style='border-bottom: 1px solid #ddd;padding-bottom: 20px;'>
+        <div class='col-md-8 col-md-offset-2'>
+          <h2><small>Information for our guests</small></h2>
+          <p>The ceremony will take place on a hill next to the main barn where we will be having the reception.  The ceremony will be all outdoors (weather permitting), so please dress accordingly.  The incline to the ceremony site is moderate, so wear shoes that you can walk uphill in for about 100 feet or so.  There will be a cart to take you up to the site for our guests with disabilities.  The reception space will be completely sheltered from wind and rain, so no need to wear anything special there.</p>
+          
+          <h2><small>Driving directions</small></h2>
 
 
-      <div>From 101 N:</div>
-      <div>Take exit toward Monterey Street</div>
-      <div>Turn left onto Buena Vista Avenue</div>
-      <div>Slight left onto Garfield Street</div>
-      <div>Turn right onto Monterey Street</div>
-      <div>Turn left onto Johnson Avenue</div>
-      <div>Slight left onto Orcutt Road</div>
-      <div>Turn left to stay on Orcutt Road</div>
-      <div>Destination is on the left (15 minutes off of the freeway)</div>
-      <div> </div>
-      <div>From 101S:</div>
-      <div>Take the CA-227/Grand Avenue</div>
-      <div>Turn right onto CA-227N/E Grand Avenue</div>
-      <div>Continue straight through Staging Area onto E Branch Street</div>
-      <div>Continue onto Corbett Canyon Road</div>
-      <div>Turn right onto Tiffany Ranch Road</div>
-      <div>Turn left onto Orcutt Road</div>
-      <div> </div>
-      <div>From Cal Poly Campus:</div>
-      <div>Head south on Grand Avenue toward Slack Street</div>
-      <div>Turn right onto Monterey Street</div>
-      <div>Turn left onto Johnson Avenue</div>
-      <div>Take a slight left onto Orcutt Road</div>
-      <div>Turn left to stay on Orcutt Road</div>
+          
+          <h3><small>From 101 N:</small></h3>
+          <div>Take exit toward Monterey Street</div>
+          <div>Turn left onto Buena Vista Avenue</div>
+          <div>Slight left onto Garfield Street</div>
+          <div>Turn right onto Monterey Street</div>
+          <div>Turn left onto Johnson Avenue</div>
+          <div>Slight left onto Orcutt Road</div>
+          <div>Turn left to stay on Orcutt Road</div>
+          <div>Destination is on the left (15 minutes off of the freeway)</div>
+          <div> </div>
+          <h3><small>From 101S:</small></h3>
+          <div>Take the CA-227/Grand Avenue</div>
+          <div>Turn right onto CA-227N/E Grand Avenue</div>
+          <div>Continue straight through Staging Area onto E Branch Street</div>
+          <div>Continue onto Corbett Canyon Road</div>
+          <div>Turn right onto Tiffany Ranch Road</div>
+          <div>Turn left onto Orcutt Road</div>
+          <div> </div>
+          <h3><small>From Cal Poly Campus:</small></h3>
+          <div>Head south on Grand Avenue toward Slack Street</div>
+          <div>Turn right onto Monterey Street</div>
+          <div>Turn left onto Johnson Avenue</div>
+          <div>Take a slight left onto Orcutt Road</div>
+          <div>Turn left to stay on Orcutt Road</div>
+        </div>
+      </div>
     </div>
 
     <div id='gifts' class='section'>
       <h1>Registry</h1>
     </div>
 
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/skroll-colors.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.26/skrollr.min.js"></script>
+    <script>
+       var s = skrollr.init();
+    </script>
   </body>
 </html>
