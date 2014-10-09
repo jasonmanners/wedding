@@ -167,7 +167,8 @@ header nav ul li {
   height: 600px;
   color: #FEFEFE;
   /*background:  url('/img/barn-us.jpg') no-repeat center bottom fixed;*/
-  background:  url('/img/barn-us.jpg') no-repeat center bottom;
+  /*background:  url('/img/barn-us.jpg') no-repeat center bottom;*/
+  background:  url('/img/about-us-gap.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -191,6 +192,9 @@ header nav ul li {
   color: #FEFEFE;
   margin: 10px auto;
   font-weight: 600;
+  position: absolute;
+  left: 150px;
+  top: 200px;
 }
 
 .count {
