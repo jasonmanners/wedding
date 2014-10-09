@@ -4,6 +4,8 @@ COLORS
 blue   = rgb(86,165,229);
 yellow = rgb(250,237,7);
 
+dark-blue   = rgb(41, 128, 185);
+dark-yellow = rgb(243, 156, 18);
 */
 * {
   font-family: 'Open Sans', sans-serif;
@@ -216,6 +218,42 @@ header nav ul li {
       --- How we met ---
  ***********************************/
 
+.how-met-side {
+  height: 500px;
+  position: relative;
+}
+
+.how-met-side .bubble {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+.bubble.boy {
+  background: rgb(86,165,229);
+}
+
+.bubble.boy:hover {
+  background: rgb(41, 128, 185);
+}
+
+.bubble.girl {
+  background: rgb(250,237,7);
+}
+
+.bubble.girl:hover {
+  background: rgb(243, 156, 18);
+}
+
+.him {
+  color: rgb(41, 128, 185);
+}
+
+.her {
+  color: rgb(243, 156, 18);
+}
+
 /***********************************
       --- Proposal ---
  ***********************************/
@@ -223,6 +261,35 @@ header nav ul li {
  /***********************************
       --- Wedding ---
  ***********************************/
+#wedding-party {
+  margin-bottom: 100px;
+}
+
+.wedding-party-card {
+  float: left;
+  margin-right: 5px;
+  /*border: 3px solid rgb(41, 128, 185);*/
+  padding: 5px;
+  width: 150px;
+  /*height: 50px;*/
+}
+
+.wedding-party-card .portrait {
+  height: 45px;
+  width: 60px;
+  background: #95a5a6;
+  margin: 0 auto;
+  margin-bottom: 5px;
+
+}
+
+.wedding-party-card.her {
+  border-color: rgb(243, 156, 18);
+}
+
+.wedding-party-card.him {
+  border-color: rgb(41, 128, 185);
+}
 
  /***********************************
       --- Guest Info ---
@@ -233,7 +300,7 @@ header nav ul li {
  ***********************************/
 
 #registry {
-  height:95%;
+  height:90%;
 }
 
 #sign-off {
@@ -242,4 +309,17 @@ header nav ul li {
   text-align: center;
   width: 200px;
   margin: 0 auto;
+}
+
+
+ /***********************************
+      --- Footer ---
+ ***********************************/
+.footer {
+  /*color: rgb(243, 156, 18);*/
+  padding: 20px;
+}
+
+.coffee {
+  color: rgb(83, 39, 0);
 }

@@ -8,12 +8,17 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top - 75
+          scrollTop: target.offset().top - 40
         }, 750);
         return false;
       }
     }
   });
+
+
+  $('.bubble').popover();
+  $('.tooltip-anchor').tooltip();
+
 });
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
